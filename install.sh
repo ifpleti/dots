@@ -35,7 +35,7 @@ ln -sf $DOTFILES_DIR/init.vim ~/.config/nvim/init.vim
 
 # install vim pluggins
 echo "Installing Vim pluggins..."
-vim +'PlugClean' +'PlugInstall' +qa
+vim -E +PlugClean +PlugInstall +qall
 
 
 echo "Done."
