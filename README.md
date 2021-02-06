@@ -8,6 +8,8 @@ An easy setup script for my personal set of linux configuration files. Highly in
 - zsh
 - https://ohmyz.sh/
 - https://github.com/zsh-users/zsh-autosuggestions
+- neovim
+- https://github.com/junegunn/vim-plug#Neovim
 ## Installation
 - With curl:
 ```console
