@@ -15,11 +15,7 @@ fmt_error() {
 }
 
 # clone repo
-git clone -c core.eol=lf -c core.autocrlf=false \
--c fsck.zeroPaddedFilemode=ignore \
--c fetch.fsck.zeroPaddedFilemode=ignore \
--c receive.fsck.zeroPaddedFilemode=ignore \
---depth=1 --branch "$BRANCH" "$REMOTE" "$ZSH_DIR" || {
+git clone --depth=1 --branch "$BRANCH" "$REMOTE" "$ZSH_DIR" || {
     fmt_error "git clone of dots repo failed"
     exit 1
 }
