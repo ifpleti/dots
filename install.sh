@@ -3,11 +3,11 @@
 set -e
 
 # variables
-ZSH_DIR=${ZSH:-~/.dots}
+CLONE_DIR=~/.dots
 REPO=${REPO:-ifpleti/dots}
 REMOTE=${REMOTE:-https://github.com/${REPO}.git}
 BRANCH=${BRANCH:-master}
-DOTFILES_DIR=~/.dots/dotfiles
+DOTFILES_DIR=${CLONE_DIR}/dotfiles
 
 # exception
 fmt_error() {
@@ -15,7 +15,7 @@ fmt_error() {
 }
 
 # clone repo
-git clone --depth=1 --branch "$BRANCH" "$REMOTE" "$ZSH_DIR" || {
+git clone --depth=1 --branch "$BRANCH" "$REMOTE" "$CLONE_DIR" || {
     fmt_error "git clone of dots repo failed"
     exit 1
 }
@@ -27,4 +27,4 @@ sudo rm -rf ~/.oh-my-zsh/themes/shades-of-purple.zsh-theme > /dev/null 2>&1
 
 # create soft links
 ln -sf $DOTFILES_DIR/.zshrc ~/.zshrc
-ln -sf $DOTFILES_DIR/.oh-my-zsh/themes/shades-of-purple.zsh-theme ~/.oh-my-zsh/themes/shades-of-purple.zsh-theme
+ln -sf $DOTFILES_DIR/shades-of-purple.zsh-theme ~/.oh-my-zsh/themes/shades-of-purple.zsh-theme
