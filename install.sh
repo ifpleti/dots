@@ -11,7 +11,7 @@ DOTFILES_DIR=${CLONE_DIR}/dotfiles
 
 # exception
 fmt_error() {
-    echo "Error!!!: $@" >&2
+    echo "ERROR: $@" >&2
 }
 
 # clone repo
@@ -22,9 +22,14 @@ git clone --depth=1 --branch "$BRANCH" "$REMOTE" "$CLONE_DIR" || {
 echo
 
 # delete existing dotfiles
+echo "Removing already existing dotfiles..."
 sudo rm -rf ~/.zshrc > /dev/null 2>&1
 sudo rm -rf ~/.oh-my-zsh/themes/shades-of-purple.zsh-theme > /dev/null 2>&1
 
 # create soft links
+echo "Creating soft links for the new dotfiles..."
 ln -sf $DOTFILES_DIR/.zshrc ~/.zshrc
 ln -sf $DOTFILES_DIR/shades-of-purple.zsh-theme ~/.oh-my-zsh/themes/shades-of-purple.zsh-theme
+
+
+echo "Done."
