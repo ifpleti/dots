@@ -27,6 +27,11 @@ sudo rm -rf ~/.zshrc > /dev/null 2>&1
 sudo rm -rf ~/.oh-my-zsh/themes/shades-of-purple.zsh-theme > /dev/null 2>&1
 sudo rm -rf ~/.config/nvim/init.vim > /dev/null 2>&1
 
+# create folders
+echo "Creating config folders if needed..."
+mkdir -p ~/.oh-my-zsh/themes
+mkdir -p ~/.config/nvim
+
 # create soft links
 echo "Creating soft links for the new dotfiles..."
 ln -sf $DOTFILES_DIR/.zshrc ~/.zshrc
