@@ -6,15 +6,15 @@ An easy setup script for my personal set of linux configuration files. based on:
 
 ## Prerequisites
 ### Script:
-git
-curl
+#### git
+#### curl
 ### Config:
-zsh
-https://ohmyz.sh/
-https://github.com/zsh-users/zsh-autosuggestions
-nodejs
-neovim
-https://github.com/junegunn/vim-plug#Neovim
+#### zsh
+#### https://ohmyz.sh/
+#### https://github.com/zsh-users/zsh-autosuggestions
+#### nodejs
+#### neovim
+#### https://github.com/junegunn/vim-plug#Neovim
 
 ## Installation
 Debian based:
