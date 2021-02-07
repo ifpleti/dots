@@ -31,7 +31,7 @@ An easy setup script for my personal set of linux configuration files. based on:
 
 5. [Install pyenv pre-req.](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
 
-6. [Install pyenv.](https://github.com/pyenv/pyenv#basic-github-checkout)
+6. [Install pyenv.](https://github.com/pyenv/pyenv-installer#installation--update--uninstallation)
 
 7. [Install pipenv.](https://pipenv-es.readthedocs.io/es/latest/)
 
