@@ -6,31 +6,31 @@ An easy setup script for my personal set of linux configuration files. based on:
 
 ## Prerequisites
 ### Script:
-- git
-- curl
+git
+curl
 ### Config:
-- zsh
-- https://ohmyz.sh/
-- https://github.com/zsh-users/zsh-autosuggestions
-- nodejs
-- neovim
-- https://github.com/junegunn/vim-plug#Neovim
+zsh
+https://ohmyz.sh/
+https://github.com/zsh-users/zsh-autosuggestions
+nodejs
+neovim
+https://github.com/junegunn/vim-plug#Neovim
 
 ## Installation
-- Debian based:
+Debian based:
 ```console
 $ sudo apt update && sudo apt install git curl zsh nodejs neovim
 ```
-- Arch based:
+Arch based:
 ```console
 $ sudo pacman -S git curl zsh nodejs neovim
 ```
-- Zsh, Oh My Zsh and vim-plug:
+Zsh, Oh My Zsh and vim-plug:
 ```console
 $ sh -c 'curl -fLo "${XDG_DATA_HOME:-$HOME/.local/share}"/nvim/site/autoload/plug.vim --create-dirs \
        https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim'
 ```
-- Installation script:
+Installation script:
 ```console
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ifpleti/dots/master/install.sh)"
 ```
