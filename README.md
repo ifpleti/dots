@@ -6,12 +6,12 @@ An easy setup script for my personal set of linux configuration files. based on:
 
 ## Installation
 >1. Use the package manager to install part of the dependencies:  
->>For Debian and Debian based distros:
+>>Debian:
 >>```console
 >>$ sudo apt update && sudo apt install git curl zsh nodejs neovim
 >>```
 >
->>For Arch and Arch based distros:
+>>Arch:
 >>```console
 >>$ sudo pacman -S git curl zsh nodejs neovim
 >>```
