@@ -35,9 +35,7 @@ An easy setup script for my personal set of linux configuration files. based on:
 
    2. [pyenv](https://github.com/pyenv/pyenv-installer#installation--update--uninstallation)
 
-7. [Install pipenv.](https://pipenv-es.readthedocs.io/es/latest/)
-
-8. Run my script to install dotfiles:
+6. Run my script to install dotfiles:
 ```console
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ifpleti/dots/master/install.sh)"
 ```
