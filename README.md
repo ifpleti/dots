@@ -29,13 +29,13 @@ An easy setup script for my personal set of linux configuration files. based on:
 
 4. [Install vim-plug.](https://github.com/junegunn/vim-plug#Neovim)
 
-5. [Install pyenv pre-req.](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
+5. Install pyenv:
 
-6. [Install pyenv.](https://github.com/pyenv/pyenv-installer#installation--update--uninstallation)
+   1. [pre-reqs](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
 
-7. [Install pipenv.](https://pipenv-es.readthedocs.io/es/latest/)
+   2. [pyenv](https://github.com/pyenv/pyenv-installer#installation--update--uninstallation)
 
-8. Run my script to install dotfiles:
+6. Run my script to install dotfiles:
 ```console
 $ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ifpleti/dots/master/install.sh)"
 ```
