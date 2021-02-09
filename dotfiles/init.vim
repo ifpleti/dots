@@ -12,6 +12,8 @@ Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
+" Conquer of Completion extensions
+let g:coc_global_extensions = ['coc-json', 'coc-git', 'coc-python']
 
 " Shades of Purple (vim & airline)
 if (has("termguicolors"))
